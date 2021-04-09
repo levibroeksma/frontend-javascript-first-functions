@@ -11,13 +11,22 @@ function add(a, b) {
 const result = add(1, 4);
 console.log(result);
 
+console.log("\n");
+
 /* Opdracht 1 */
 // Schrijf een functie genaamd greeter, die een naam verwacht en een groet teruggeeft
 // ---- Verwachte uitkomsten:
 // greeter("Jan") geeft "Hoi Jan!"
 // greeter("Kees") geeft "Hoi Kees!"
 
+function greeter(greet, name) {
+  return greet + name;
+}
 
+console.log(greeter("Hoi ", "Levi!"))
+
+
+console.log("\n");
 
 /* Opdracht 2 */
 // Schrijf een functie genaamd minutesToSeconds, die een hoeveelheid minuten verwacht (als een getal) en teruggeeft hoeveel seconden dat zijn.
@@ -26,7 +35,15 @@ console.log(result);
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
 
+function minutesToSeconds(minutes) {
+  return minutes * 60;
+}
 
+console.log(minutesToSeconds(1));
+console.log(minutesToSeconds(3));
+console.log(minutesToSeconds(23));
+
+console.log("\n");
 
 /* Opdracht 3 */
 // Schrijf een functie genaamd merge, die twee strings verwacht en deze aan elkaar geplakt teruggeeft.
@@ -35,8 +52,14 @@ console.log(result);
 // merge("abra", "cadabra") geeft "abracadabra"
 // merge("zoet", "sappig") geeft "zoetsappig"
 
+function merge(firstString, secondString) {
+  return firstString + secondString;
+}
 
+console.log(merge("abra", "cadabra"));
+console.log(merge("zoet", "sappig"));
 
+console.log("\n");
 
 /* Opdracht  4 */
 // Schrijf een functie genaamd calculateDogYears die de hondenleeftijd verwacht en dit omrekent naar mensenjaren (1 tot 7). Op basis daarvan wordt een zinnetje teruggegeven.
@@ -44,7 +67,14 @@ console.log(result);
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
 
+function calculateDogYears(dogYears) {
+  return "Jouw hond is " + dogYears * 7 + " jaar oud in mensenjaren.";
+}
 
+console.log(calculateDogYears(6));
+console.log(calculateDogYears(2));
+
+console.log("\n");
 
 /* Opdracht 5 */
 // Schrijf een functie genaamd wrapper, die twee parameters verwacht: een woord en een karakter
@@ -54,7 +84,14 @@ console.log(result);
 // wrapper("beep", "_") geeft "_beep_"
 // wrapper("kaas", "Q") geeft "QkaasQ"
 
+function wrapper(word, character) {
+  return character + word + character;
+}
 
+console.log(wrapper("bril", "*"))
+console.log(wrapper("beep", "_"))
+console.log(wrapper("kaas", "Q"))
+console.log("\n");
 
 /* Bonus opdracht  */
 // Schrijf een functie genaamd createDetailString, die een object met de properties firstName, lastName en profession verwacht en een zin teruggeeft
@@ -62,4 +99,9 @@ console.log(result);
 // createDetailString({ firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}) geeft "Het beroep vam Jan Jansen is docent."
 // createDetailString({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}) geeft "Het beroep vam Kees Klaasen is brandweerman."
 
+function createDetailString(firstName, lastName, profession) {
+  return "Het beroep van " + firstName + " " + lastName + " is " + profession + ".";
+}
 
+console.log(createDetailString("Levi", "Broeksma", "developer"));
+console.log(createDetailString("Kees", "Klaasen", "brandweerman"));
