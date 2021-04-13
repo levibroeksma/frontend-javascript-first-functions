@@ -88,9 +88,9 @@ function wrapper(word, character) {
   return character + word + character;
 }
 
-console.log(wrapper("bril", "*"))
-console.log(wrapper("beep", "_"))
-console.log(wrapper("kaas", "Q"))
+console.log(wrapper("bril", "*"));
+console.log(wrapper("beep", "_"));
+console.log(wrapper("kaas", "Q"));
 console.log("\n");
 
 /* Bonus opdracht  */
