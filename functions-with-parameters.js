@@ -23,7 +23,7 @@ function greeter(greet, name) {
   return greet + name;
 }
 
-console.log(greeter("Hoi ", "Levi!"))
+console.log(greeter("Hoi ", "Levi!"));
 
 
 console.log("\n");
